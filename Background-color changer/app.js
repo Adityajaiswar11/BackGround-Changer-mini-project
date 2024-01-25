@@ -8,16 +8,15 @@ const colorName = document.getElementById("colorName");
 input.addEventListener("change", ColorChange);
 
 function ColorChange(e) {
-  const inputValue = e.target.value+" ";
+  const inputValue = e.target.value + " ";
 
   const color = inputValue.toLowerCase();
   child.style.backgroundColor = color;
   colorName.innerHTML = color.toUpperCase();
   colorName.style.color = color;
-  para.innerHTML="Great! You have changed  the color. Try again.";
+  para.innerHTML = "Great! You have changed  the color. Try again.";
 }
 
 btn.addEventListener("click", () => {
-
   ColorChange();
 });
